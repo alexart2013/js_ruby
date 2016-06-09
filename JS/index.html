@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>parser</title>
+        <script type="text/javascript">
+            function countWords(){
+                str = document.getElementById('inputString').value;
+                document.getElementById('wordcount').value = str.split(' ').length;
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <textarea id="inputString" cols="50" rows="4" placeholder="Введите текст"></textarea>
+            <br>
+            <input type="button" name="Convert" value="Посчитать" onClick="countWords();">
+            <input id="wordcount" type="text" value="">
+        </div>
+
+    </body>
+</html>
