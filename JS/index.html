@@ -5,18 +5,34 @@
         <title>parser</title>
         <script type="text/javascript">
             function countWords(){
-                str = document.getElementById('inputString').value;
-                document.getElementById('wordcount').value = str.split(' ').length;
+                var  prev_char_is_letter = false;
+                var word_count = 0;
+                text = document.getElementById('inputString').value;
+                for (i = 0; i < text.length; i++){
+                    if (text[i] != ' ' && !prev_char_is_letter){
+                        prev_char_is_letter = true;
+                        word_count += 1;
+                    }else if (text[i] == ' '){
+                        prev_char_is_letter = false
+                    }else {
+                        prev_char_is_letter = true
+                    }
+                }
+                document.getElementById('wordcount').value = word_count;
+             /*str = document.getElementById('inputString').value;
+                console.log(str);
+                document.getElementById('wordcount').value = str.split(' ').length;*/
             }
-
         </script>
     </head>
     <body>
         <div>
-            <textarea id="inputString" cols="50" rows="4" placeholder="Введите текст"></textarea>
-            <br>
-            <input type="button" name="Convert" value="Посчитать" onClick="countWords();">
-            <input id="wordcount" type="text" value="">
+            <form>
+                <textarea id="inputString" cols="50" rows="4" placeholder="Введите текст"></textarea>
+                <br>
+                <input type="button" name="Convert" value="Посчитать" onClick="countWords();">
+                <input id="wordcount" type="text" value="">
+            </form>
         </div>
 
     </body>
