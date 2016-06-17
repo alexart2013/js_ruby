@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html >
+<html>
     <head>
         <meta charset="UTF-8">
         <title>parser</title>
         <script type="text/javascript">
             function countWords(){
-                var  prev_char_is_letter = false;
+                var prev_char_is_letter = false;
                 var word_count = 0;
-                text = document.getElementById('inputString').value;
-                for (i = 0; i < text.length; i++){
+                var text = document.getElementById('inputString').value;
+                for (var i = 0; i < text.length; i++){
                     if (text[i] != ' ' && !prev_char_is_letter){
                         prev_char_is_letter = true;
                         word_count += 1;
@@ -19,9 +19,6 @@
                     }
                 }
                 document.getElementById('wordcount').value = word_count;
-             /*str = document.getElementById('inputString').value;
-                console.log(str);
-                document.getElementById('wordcount').value = str.split(' ').length;*/
             }
         </script>
     </head>
@@ -34,6 +31,5 @@
                 <input id="wordcount" type="text" value="">
             </form>
         </div>
-
     </body>
 </html>

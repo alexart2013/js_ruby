@@ -3,16 +3,10 @@ def count(text = gets)
   word_count = 0
   prev_char_is_letter = false
   while i < text.length do
-    if text[i] != ' ' && !prev_char_is_letter
-      prev_char_is_letter = true
-      word_count += 1
-    elsif text[i] == ' '
-      prev_char_is_letter = false
-      i += 1
-    else
-      prev_char_is_letter = true
-      i += 1
-    end
+    char_is_letter = text[i] != ' '
+    word_count += 1 if char_is_letter && !prev_char_is_letter
+    prev_char_is_letter = char_is_letter
+    i += 1
   end
   puts word_count
 end
