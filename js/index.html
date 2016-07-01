@@ -3,11 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>parser</title>
+        <link rel="stylesheet" href="jasmine-2.4.1/jasmine.css">
+        <script type="text/javascript" src="jasmine-2.4.1/jasmine.js"></script>
+        <script type="text/javascript" src="jasmine-2.4.1/jasmine-html.js"></script>
+        <script type="text/javascript" src="jasmine-2.4.1/boot.js"></script>
+        <script type="text/javascript" src="index_spec.js"></script>
         <script type="text/javascript">
-            function countWords(){
+            function countWords(text ){
                 var prev_char_is_letter = false;
                 var word_count = 0;
-                var text = document.getElementById('inputString').value;
+
                 for (var i = 0; i < text.length; i++){
                     if (text[i] != ' ' && !prev_char_is_letter){
                         prev_char_is_letter = true;
@@ -18,7 +23,7 @@
                         prev_char_is_letter = true
                     }
                 }
-                document.getElementById('wordcount').value = word_count;
+                return document.getElementById('wordcount').value = word_count;
             }
         </script>
     </head>
