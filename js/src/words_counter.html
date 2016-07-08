@@ -9,7 +9,7 @@
         <script type="text/javascript" src="jasmine-2.4.1/boot.js"></script>
         <script type="text/javascript" src="index_spec.js"></script>
         <script type="text/javascript">
-            function countWords(text ){
+            function wordsCounter(text ){
                 var prev_char_is_letter = false;
                 var word_count = 0;
 
@@ -32,7 +32,7 @@
             <form>
                 <textarea id="inputString" cols="50" rows="4" placeholder="Введите текст"></textarea>
                 <br>
-                <input type="button" name="Convert" value="Посчитать" onClick="countWords();">
+                <input type="button" name="Convert" value="Посчитать" onClick="wordsCountert();">
                 <input id="wordcount" type="text" value="">
             </form>
         </div>

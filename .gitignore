@@ -1,8 +1,5 @@
+js/lib
 words_counter.rb
-
 text.txt
-
 text_.txt
-
-words_counter_v3
-.rb
+words_counter_v3.rb
