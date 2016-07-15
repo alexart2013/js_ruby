@@ -1,4 +1,4 @@
-require '../words_counter_v3.rb'
+require '../words_counter.rb'
 describe WordsCounter do
   it 'should returns 2'  do
     expect(WordsCounter.count("word1 word2")).to eq 2
