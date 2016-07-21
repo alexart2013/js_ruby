@@ -4,4 +4,4 @@ rvm:
 
 install: gem install rspec
 script: 
-  - bundle exec rake build
+  - bundle exec rake test
