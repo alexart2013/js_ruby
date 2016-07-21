@@ -1,5 +1,8 @@
 language: ruby
+rvm:
+  - 1.9
+  - 2.2
+  - 2.3
 
-source 'http://rubygem.org'
-gem 'rspec', '3.4.4'
+install: gem install rails
 
