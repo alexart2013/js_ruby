@@ -2,4 +2,4 @@ language: ruby
 
 source 'http://rubygem.org'
 gem 'rspec', '3.4.4'
-script: "bundle exec rake"
+
