@@ -1,4 +1,5 @@
 require '../words_counter.rb'
+
 describe WordsCounter do
   it 'should count 2 words ignoring spaces'  do
     expect(WordsCounter.count('word1 word2')).to eq 2

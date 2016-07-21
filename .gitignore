@@ -1,6 +1,6 @@
 .idea
 words_counter_v2.rb
 words_counter_v3.rb
-spec/sum_spec.rb
+spec/
 parser.rb
 sum.rb
