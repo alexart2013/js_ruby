@@ -1,6 +1,8 @@
 language: ruby
 rvm:
   - 2.2
-install: gem install rspec
+install: 
+  - gem install rspec
+  - gem install rake
 script:
   - bundle exec rake build
