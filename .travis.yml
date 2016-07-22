@@ -3,4 +3,3 @@ rvm:
   - 2.2
 
 install: gem install rspec
-script: bundle exec rake build
