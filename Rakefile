@@ -1,4 +1,4 @@
-task :default do
-  puts "Hello World!"
+task :spec do
+  Spec
 end
 
