@@ -1,4 +1,4 @@
-require '../words_counter.rb'
+require './words_counter.rb'
 
 describe WordsCounter do
   it 'should count 2 words ignoring spaces'  do
@@ -41,6 +41,4 @@ describe WordsCounter do
                                Сладок мускус новобрачным,\n
                                Камфора годна гробам")).to eq 46
   end
-
-
 end
